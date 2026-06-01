@@ -45,7 +45,7 @@ echo.
 
 for %%f in ("%~dp0extensions\*.vsix") do (
     echo Устанавливаю %%~nxf ...
-    "!CODECLI!" --install-extension "%%f"
+    call "!CODECLI!" --install-extension "%%f"
 )
 
 echo.
